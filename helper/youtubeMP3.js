@@ -4,7 +4,7 @@ const downloadMP3 = async function(url){
     try {
         const data = await poji_ytmp3(url); // link youtube
         let thumbnail = youtubeThumbnail(url);
-        return {data,thumbnail,info}
+        return {data,thumbnail}
       } catch (error) {
         return error.message;
       }
